@@ -5,13 +5,10 @@ This application creates the Rest APIs for post,get,put, and delete operation fo
 Use postman API testing tool for testing the API.
 The api spec is as follows:
 
-METHOD              path                     Params               Request Body
-
-Get               /api/employees              -                   
-                  /api/employees/{id}        id
-                  
-Post              /api/employees                                    employee(Object)
-
-Put               /api/employees/{id}        id                     employee(Object)
-
-Delete            /api/employees/{id}        id
+| Method | endpoint            | Params | Request Body    | Action                                 |
+|--------|---------------------|--------|-----------------|----------------------------------------|
+| GET    | /api/employees      | -      | -               | Retrieves a list of employees          |
+| GET    | /api/employees/{id} | id     | -               | Retrieves a specific employee using id |
+| POST   | /api/employees      | -      | Employee Object | To insert new Employee to the table    |
+| PUT    | /api/employees{id}  | id     | Employee Object | To update an existing Employee         |
+| DELETE | /api/employees      | id     | -               | To delete employee by id               |
